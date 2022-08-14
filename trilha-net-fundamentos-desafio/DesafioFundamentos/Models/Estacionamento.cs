@@ -59,15 +59,16 @@ namespace DesafioFundamentos.Models
                 try
                 {
                     horas = int.Parse(Console.ReadLine());
+                    // TODO: Remover a placa digitada da lista de veículos
+                    // *IMPLEMENTE AQUI*
+                    Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
                 }
                 catch
                 {
                     Console.WriteLine("Digite um numero de horas validas:");
                     RemoverVeiculo();
                 }
-                // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                
             }
             else
             {
